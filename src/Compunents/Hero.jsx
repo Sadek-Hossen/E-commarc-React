@@ -1,12 +1,61 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+
+// Hero Items
+const heroInfo = [
+  {
+    img: "hero (1).png",
+    heading: "Don’t miss amazing grocery deals",
+    para: "Sign up for the daily newsletter",
+  },
+  {
+    img: "hero (2).png",
+    heading: "Fresh Vegetables Big discount",
+    para: "Save up to 50% off on your first order",
+  },
+  {
+    img: "hero (3).png",
+    heading: "Fresh Vegetables",
+    para: "Sign up for the daily newsletter",
+  },
+];
 
 function Hero() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Auto slide every 2 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) =>
+        prev === heroInfo.length - 1 ? 0 : prev + 1
+      );
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const currentSlide = heroInfo[currentIndex];
+
   return (
-    <div><div className='mt-20'>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aspernatur libero dolorum iste rerum quidem, reiciendis repellat ut distinctio ad blanditiis officiis ullam labore culpa quos totam officia nam debitis iusto! Animi dicta mollitia saepe aperiam sit laborum deleniti odio reprehenderit deserunt iusto! Consectetur omnis cumque quia! Saepe sequi ratione adipisci veritatis sed, dignissimos nisi temporibus nemo exercitationem, corporis consectetur pariatur fuga rerum placeat officia beatae atque sit vitae sapiente facere impedit. Officiis fugit consequuntur unde maiores, ipsa tenetur laudantium magni incidunt facere eveniet rerum, ipsam itaque omnis inventore ea molestiae earum placeat, excepturi dignissimos sunt eius! Eveniet, cumque cum.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eveniet libero iure fugiat aspernatur soluta excepturi possimus autem, ut aut qui debitis, magni, aliquam minus cumque officiis? Fugit reprehenderit, facere nemo nihil corrupti dignissimos molestiae expedita assumenda commodi itaque dolorum minima dolor voluptatem minus harum eius quas explicabo magnam totam saepe consectetur in neque? Obcaecati repellat accusamus voluptates harum provident molestiae repellendus eius deserunt aliquam voluptatum eos quidem quaerat tenetur unde cum ad dolor explicabo sit, ut debitis deleniti sequi asperiores. Fugit dicta ad autem voluptatum inventore velit nihil placeat necessitatibus libero odio, eum, at dolores officia laboriosam fuga vitae sint aspernatur illum magnam esse illo quos. Unde officiis in esse quo similique, voluptatem accusamus reprehenderit? Alias libero reprehenderit vitae. Sint molestias reiciendis eaque dignissimos soluta ipsam sed, ipsa laborum velit saepe ratione porro, assumenda molestiae quasi, suscipit nisi! Praesentium cum recusandae expedita, ad maiores minus quod vero perferendis reprehenderit ullam error illum sed dicta unde tempora fugiat modi mollitia voluptate iste assumenda accusantium culpa optio corporis. Perferendis aliquid est assumenda cumque dignissimos placeat tenetur. Iste vitae inventore reiciendis corporis exercitationem ipsa itaque hic! Consectetur commodi officia quis voluptas ipsa ab qui vero corporis deleniti minima culpa iure molestiae ex maiores deserunt fuga atque, itaque enim dolore nemo animi beatae placeat reprehenderit! Harum, at! Similique nihil est molestias a quod, ipsam ea beatae quaerat esse error. Doloremque officia officiis qui, atque similique illum magni laudantium voluptatibus fugiat nisi alias, ipsa iste laboriosam consequatur, aperiam sequi dicta exercitationem! Velit enim tenetur mollitia ratione doloremque voluptate, fugit aut necessitatibus fuga adipisci rem eum consectetur quos perferendis eligendi! Quos, molestias incidunt consequuntur nulla et cum ea. Sint repellendus rem, aperiam dolore quam sunt molestiae incidunt, alias obcaecati unde explicabo quidem nemo veritatis deleniti? Commodi beatae praesentium itaque architecto voluptates nesciunt soluta eum sed in, neque quis vel necessitatibus deleniti odio labore mollitia distinctio suscipit corporis voluptatum illum quidem nemo, minus quod? Repudiandae architecto quod quisquam eaque id esse veniam ut rem. Doloribus aliquam atque dicta saepe numquam, quo aliquid nam voluptates nostrum! Adipisci, vero sint perferendis pariatur tempore commodi odio unde blanditiis harum nam et neque magni optio at quod reiciendis ad alias fugit. Provident nesciunt porro, magni neque ex magnam repudiandae perferendis dolore laboriosam officiis et nostrum soluta recusandae accusamus, maxime odio molestias reprehenderit voluptate omnis eaque harum dolorem tenetur. Cumque perspiciatis nisi distinctio sunt natus at voluptatem delectus alias atque aspernatur.
-    </div></div>
-  )
+    <section className="mt-20  transition-opacity duration-1000 ease-in-out ">
+      {/* relative container */}
+      <div className="relative w-full h-[500px] overflow-hidden ">
+        {/* background image */}
+        <img
+          src={currentSlide.img}
+          alt="Hero"
+          className="w-full h-full object-cover"
+        />
+
+        {/* overlay text */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="bg-black bg-opacity-60 text-white p-6 rounded-md text-center max-w-xl">
+            <h1 className="text-3xl font-bold mb-4">{currentSlide.heading}</h1>
+            <p className="text-lg">{currentSlide.para}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default Hero
+export default Hero;

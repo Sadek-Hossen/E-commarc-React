@@ -11,7 +11,7 @@ function Header() {
     setOpen(!open)
   }
   return (
-    <section className='w-full mt-2 top-0 fixed'>
+    <section className='w-full mt-0 top-0 fixed z-100 p-3 bg-amber-600 '>
 
      <nav className='md:flex justify-around items-cent hidden  mx-auto'>
       <div><img className='' src="img/logo.png" alt="" /></div>

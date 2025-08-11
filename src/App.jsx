@@ -9,6 +9,7 @@ import Shop from './Compunents/Shop';
 import Blog from './Compunents/Blog';
 import Featured from './Compunents/Featured';
 import Card from './Compunents/Card';
+import Packed from './Compunents/Packed';
 function App() {
  
 
@@ -21,6 +22,7 @@ function App() {
           <Hero />
            <Featured /> 
            <Card />
+           <Packed />
         </>
       } />
    

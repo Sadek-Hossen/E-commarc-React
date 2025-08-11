@@ -33,9 +33,11 @@ function Card() {
             </div>
           <div className='relative '>
               <h1 className="text-[16px] md:text-xl pt-3 pl-2 md:pl-5  font-semibold mb-3">{item.heading}</h1>
+           <a href="/about">
             <button className="bg-green-600 mt-16 hover:-rotate- mb-3 hover:-rotate-10 ml-4 md:ml-7 py-2 hover:px-3 hover:py-1  px-4 rounded text-white transition-all duration-300 hover:shadow-blue-600 shadow-lg shadow-yellow-800 hover:bg-blue-950">
               {item.button}
             </button>
+           </a>
         
           </div>
           </div>

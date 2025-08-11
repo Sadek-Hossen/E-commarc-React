@@ -10,6 +10,7 @@ import Blog from './Compunents/Blog';
 import Featured from './Compunents/Featured';
 import Card from './Compunents/Card';
 import Packed from './Compunents/Packed';
+import DayliSels from './Compunents/DayliSels';
 function App() {
  
 
@@ -23,6 +24,7 @@ function App() {
            <Featured /> 
            <Card />
            <Packed />
+           <DayliSels />
         </>
       } />
    

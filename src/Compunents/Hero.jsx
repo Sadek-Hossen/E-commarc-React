@@ -1,5 +1,6 @@
 import React, { useEffect, useState,useRef } from "react";
 
+
 // Hero Items
 const heroInfo = [
   {
@@ -50,7 +51,7 @@ function Hero() {
     }
 
   return (
-    <section className=" mt-10 md:mt-20   transition-opacity duration-1000 z-0 ease-in-out ">
+    <section className=" md:py-0  mt-10 md:mt-20   transition-opacity duration-1000 z-0 ease-in-out ">
       {/* relative container */}
       <div className="relative w-full md:h-[400px] h-[200px] overflow-hidden ">
         {/* background image */}
@@ -62,17 +63,19 @@ function Hero() {
 
         {/* overlay text */}
         <div className="absolute inset-0 flex-col gap-4 flex items-center justify-center">
-          <div className="bg-black bg-opacity-60 text-white p-6 rounded-md text-center max-w-xl">
+          <div className=" mt-5 bg-black bg-opacity-60 text-white p-3 md:p-6 rounded-md text-center max-w-xl">
             <h1 className="text-xl md:text-3xl font-bold mb-4">{currentSlide.heading}</h1>
             <p className="text-[15px] text-gray-500 md:text-lg">{currentSlide.para}</p>
 
           </div>
-          <input type="text" ref={textref} />
-          <div className="w-[40%] mx-auto flex justify-between items-center bg-white rounded-full   pl-5 pr-0 ">
-            <input ref={emailRef} className="border-none outline-none " type="text" placeholder="Enter your email " /> <button onClick={HandleBtn} className="bg-green-400 py-4  rounded-full mr-0 px-10 opacity-100 hover:opacity-80 cursor-pointer transition-all hover:text-gray-600 hover:shadow-blue-900 shadow-xl shadow-fuchsia-800 font-semibold">Subscribe</button>
+          <input type="text" ref={textref}  className="text-red-600"/>
+          <div className=" w-[40%] mx-auto flex justify-between items-center bg-white rounded-full mb-5  pl-5 pr-0 ">
+            <input ref={emailRef} className="border-none outline-none " type="text" placeholder="Enter your email " /> <button onClick={HandleBtn} className="bg-green-400 md:py-4 py-2  rounded-full mr-0 px-5 md:px-10 opacity-100 hover:opacity-80 cursor-pointer transition-all hover:text-gray-600 hover:shadow-blue-900 shadow-xl shadow-fuchsia-800 font-semibold">Subscribe</button>
           </div>
         </div>
       </div>
+
+
 
     </section>
   );

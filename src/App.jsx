@@ -7,6 +7,8 @@ import Contruct from './Compunents/Contruct';
 import About from './Compunents/about';
 import Shop from './Compunents/Shop';
 import Blog from './Compunents/Blog';
+import Featured from './Compunents/Featured';
+import Card from './Compunents/Card';
 function App() {
  
 
@@ -14,7 +16,14 @@ function App() {
     <dispatchEvent>
         <Header/>
       <Routes>
-        <Route path='/' element={<Hero />} />
+        <Route path='/' element={
+        <>
+          <Hero />
+           <Featured /> 
+           <Card />
+        </>
+      } />
+   
         <Route path='/About' element={<About />} />
         <Route path='/Shop' element={<Shop />} />
         <Route path='/Blog' element={<Blog />} />

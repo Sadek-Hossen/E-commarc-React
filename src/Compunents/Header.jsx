@@ -3,7 +3,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import { Link } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 
 function Header() {
   const [open, setOpen]= useState(false)
@@ -16,11 +16,11 @@ function Header() {
      <nav className='md:flex justify-around items-cent hidden  mx-auto'>
       <div><img className='' src="img/logo.png" alt="" /></div>
       <div className='flex justify-around items-center gap-5 font-semibold font-mono '>
-      <Link onClick={()=>setOpen(false)} to={'/'}>Home </Link>
-       <Link onClick={()=>setOpen(false)} to={'/About'}>About </Link>
-       <Link onClick={()=>setOpen(false)} to={'/Shop'}>Shop </Link>
-       <Link onClick={()=>setOpen(false)} to={"/Blog"}>Blog </Link>
-       <Link onClick={()=>setOpen(false)} to={"/Contruct"}>Contruct </Link>
+       <NavLink className={({isActive})=>isActive?'text-white border-b  ':'text-black hover:text-blue-200 transition-all duration-300'} to={'/'}>Home </NavLink>
+       <NavLink className={({isActive})=>isActive?'text-white border-b ':'text-black hover:text-blue-200 transition-all duration-300'} to={'/About'}>About </NavLink>
+       <NavLink className={({isActive})=>isActive?'text-white border-b ':'text-black hover:text-blue-200 transition-all duration-300'} to={'/Shop'}>Shop </NavLink>
+       <NavLink className={({isActive})=>isActive?'text-white border-b ':'text-black hover:text-blue-200 transition-all duration-300'} to={"/Blog"}>Blog </NavLink>
+       <NavLink className={({isActive})=>isActive?'text-white border-b ':'text-black hover:text-blue-200 transition-all duration-300'} to={"/Contruct"}>Contruct </NavLink>
      
       </div>
       <div className='flex justify-around items-center gap-3'>

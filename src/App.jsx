@@ -11,6 +11,7 @@ import Featured from './Compunents/Featured';
 import Card from './Compunents/Card';
 import Packed from './Compunents/Packed';
 import DayliSels from './Compunents/DayliSels';
+import Vagitabls from './Compunents/Vagitabls'; 
 function App() {
  
 
@@ -25,6 +26,7 @@ function App() {
            <Card />
            <Packed />
            <DayliSels />
+           <Vagitabls />
         </>
       } />
    

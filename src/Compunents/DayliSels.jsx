@@ -8,11 +8,11 @@ import Slider from "@mui/material/Slider";
 const marks = [
   {
     value: 0,
-    label: "0°C",
+  
   },
   {
     value: 20,
-    label: "20°C",
+
   },
 ];
 
@@ -33,18 +33,18 @@ function DayliSels() {
           <a href="/about">
             <div className="rounded-2xl border-2 border-gray-200 hover:scale-105 transition-all cursor-pointer">
               <img className=" mx-auto" src="pack (1).png" alt="" />
-              <p className="px-4 text-gray-700 text-[5px] md:text-[14px]">
+              <p className="px-4 text-gray-700 text-[16px] md:text-[14px]">
                 Hodo Foods
               </p>
-              <h1 className="py- px-4 font-semibold text-[6px] md:text-[15px] sm:text-[6px]  ">
+              <h1 className="py- px-4 font-semibold text-[16px] md:text-[15px] sm:text-[6px]  ">
                 All Natural Italian-Style Chicken Meatballs
               </h1>
-              <div className="flex px-4 text-[6px] md:text-[16px]">
+              <div className="flex px-4 text-[15px] md:text-[16px]">
                 <p className=" text-gray-600">By :</p>{" "}
                 <span className="text-green-600">NestFood</span>
               </div>
               <div className="flex px-4 mb-2 justify-between items-center">
-                <div className="flex gap-3  md:text-[16px] text-[6px]">
+                <div className="flex gap-3  md:text-[16px] text-[14px]">
                   <span className="font-semibold text-green-700 ">$40.5 </span>
                   <del className="text-gray-600 "> $43.28</del>
                 </div>
@@ -73,18 +73,18 @@ function DayliSels() {
           <a href="/about">
             <div className="rounded-2xl border-2 border-gray-200 hover:scale-105 transition-all cursor-pointer">
               <img className=" mx-auto" src="pack (4).png" alt="" />
-              <p className="px-4 text-gray-700 text-[5px] md:text-[14px]">
+              <p className="px-4 text-gray-700 text-[15px] md:text-[14px]">
                 Hodo Foods
               </p>
-              <h1 className="py- px-4 font-semibold text-[6px] md:text-[15px] sm:text-[6px]  ">
+              <h1 className="py- px-4 font-semibold text-[16px] md:text-[15px] sm:text-[6px]  ">
                 Angie’s Boomchickapop Sweet and womnies
               </h1>
-              <div className="flex px-4 text-[6px] md:text-[16px]">
+              <div className="flex px-4 text-[16px] md:text-[16px]">
                 <p className=" text-gray-600">By :</p>{" "}
                 <span className="text-green-600">NestFood</span>
               </div>
               <div className="flex px-4 mb-2 justify-between items-center">
-                <div className="flex gap-3  md:text-[16px] text-[6px]">
+                <div className="flex gap-3  md:text-[16px] text-[16px]">
                   <span className="font-semibold text-green-700 ">$40.5 </span>
                   <del className="text-gray-600 "> $43.28</del>
                 </div>
@@ -114,18 +114,18 @@ function DayliSels() {
           <a href="/about">
             <div className="rounded-2xl border-2 border-gray-200 hover:scale-105 transition-all cursor-pointer">
               <img className=" mx-auto" src="pack (3).png" alt="" />
-              <p className="px-4 text-gray-700 text-[5px] md:text-[14px]">
+              <p className="px-4 text-gray-700 text-[15px] md:text-[14px]">
                 Hodo Foods
               </p>
-              <h1 className="py- px-4 font-semibold text-[6px] md:text-[15px] sm:text-[6px]  ">
+              <h1 className="py- px-4 font-semibold text-[16px] md:text-[15px]  ">
                 Foster Farms Takeout Crispy Classic
               </h1>
-              <div className="flex px-4 text-[6px] md:text-[16px]">
+              <div className="flex px-4 text-[16px] md:text-[16px]">
                 <p className=" text-gray-600">By :</p>{" "}
                 <span className="text-green-600">NestFood</span>
               </div>
               <div className="flex px-4 mb-2 justify-between items-center">
-                <div className="flex gap-3  md:text-[16px] text-[6px]">
+                <div className="flex gap-3  md:text-[16px] text-[16px]">
                   <span className="font-semibold text-green-700 ">$40.5 </span>
                   <del className="text-gray-600 "> $43.28</del>
                 </div>
@@ -155,18 +155,18 @@ function DayliSels() {
           <a href="/about">
             <div className="rounded-2xl border-2 border-gray-200 hover:scale-105 transition-all cursor-pointer">
               <img className=" mx-auto" src="pack (8).png" alt="" />
-              <p className="px-4 text-gray-700 text-[5px] md:text-[14px]">
+              <p className="px-4 text-gray-700 text-[15px] md:text-[14px]">
                 Hodo Foods
               </p>
-              <h1 className="py- px-4 font-semibold text-[6px] md:text-[15px] sm:text-[6px]  ">
+              <h1 className="py- px-4 font-semibold text-[16px] md:text-[15px] sm:text-[6px]  ">
                 Chobani Complete Vanilla Greek Yogurt
               </h1>
-              <div className="flex px-4 text-[6px] md:text-[16px]">
+              <div className="flex px-4 text-[16px] md:text-[16px]">
                 <p className=" text-gray-600">By :</p>{" "}
                 <span className="text-green-600">NestFood</span>
               </div>
               <div className="flex px-4 mb-2 justify-between items-center">
-                <div className="flex gap-3  md:text-[16px] text-[6px]">
+                <div className="flex gap-3  md:text-[16px] text-[16px]">
                   <span className="font-semibold text-green-700 ">$40.5 </span>
                   <del className="text-gray-600 "> $43.28</del>
                 </div>

@@ -12,6 +12,8 @@ import Card from './Compunents/Card';
 import Packed from './Compunents/Packed';
 import DayliSels from './Compunents/DayliSels';
 import Vagitabls from './Compunents/Vagitabls'; 
+import StayHome from './Compunents/StayHome';
+import Footer from './Compunents/Footer';
 function App() {
  
 
@@ -35,6 +37,8 @@ function App() {
         <Route path='/Blog' element={<Blog />} />
         <Route path='/Contruct' element={<Contruct />} />
       </Routes>
+      <StayHome />
+      <Footer />
     </dispatchEvent>
   )
 }

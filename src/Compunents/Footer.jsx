@@ -128,11 +128,11 @@ function Footer() {
  
         
         <div className="border-t-2 flex justify-between items-center py-5 mt-4 ">
-            <div className="text-gray-600"><p>© 2025, Nest - HTML Ecommerce Template
+            <div className="text-gray-600 text-[10px] md:text-[16px]"><p>© 2025, Nest - HTML Ecommerce Template
 All rights reserved</p></div>
-            <div className="flex gap-4">
-                <div><AddCallIcon className="scale-200  text-green-500" /> <span className="text-gray-600 text-2xl">+142954255</span></div>
-                <div className="gap-4  flex"><AddCallIcon  className="w-2 scale-200 text-green-500"/> <span className="text-gray-600 text-2xl ">+142954255</span></div>
+            <div className="flex gap-4 text-center  ">
+                <div className="gap-2" ><AddCallIcon className="md:scale-200  text-green-500" /> <span className="text-gray-600 text-2xl text-[6px] md:text-[16px]">+142954255</span></div>
+                <div className=" gap-2"><AddCallIcon  className="w-2  md:scale-200 text-green-500"/> <span className="text-gray-600 text-2xl  text-[6px] md:text-[16px]">+142954255</span></div>
             </div>
         </div>
 

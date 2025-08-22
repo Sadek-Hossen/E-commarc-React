@@ -14,6 +14,7 @@ import DayliSels from './Compunents/DayliSels';
 import Vagitabls from './Compunents/Vagitabls'; 
 import StayHome from './Compunents/StayHome';
 import Footer from './Compunents/Footer';
+import Product from './Compunents/Product';
 function App() {
  
 
@@ -29,6 +30,7 @@ function App() {
            <Packed />
            <DayliSels />
            <Vagitabls />
+           
         </>
       } />
    
@@ -36,6 +38,8 @@ function App() {
         <Route path='/Shop' element={<Shop />} />
         <Route path='/Blog' element={<Blog />} />
         <Route path='/Contruct' element={<Contruct />} />
+        <Route path='/product' element={<Product />} />
+        
       </Routes>
       <StayHome />
       <Footer />

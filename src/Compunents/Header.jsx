@@ -21,6 +21,7 @@ function Header() {
        <NavLink className={({isActive})=>isActive?'text-white border-b ':'text-black hover:text-blue-200 transition-all duration-300'} to={'/Shop'}>Shop </NavLink>
        <NavLink className={({isActive})=>isActive?'text-white border-b ':'text-black hover:text-blue-200 transition-all duration-300'} to={"/Blog"}>Blog </NavLink>
        <NavLink className={({isActive})=>isActive?'text-white border-b ':'text-black hover:text-blue-200 transition-all duration-300'} to={"/Contruct"}>Contruct </NavLink>
+       <NavLink className={({isActive})=>isActive?'text-white border-b ':'text-black hover:text-blue-200 transition-all duration-300'} to={"/Product"}>Product </NavLink>
      
       </div>
       <div className='flex justify-around items-center gap-3'>

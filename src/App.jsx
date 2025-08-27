@@ -15,6 +15,7 @@ import Vagitabls from './Compunents/Vagitabls';
 import StayHome from './Compunents/StayHome';
 import Footer from './Compunents/Footer';
 import Product from './Compunents/Product';
+import BgHome from './Compunents/BgHome'; 
 function App() {
  
 
@@ -27,6 +28,7 @@ function App() {
           <Hero />
            <Featured /> 
            <Card />
+           <BgHome />
            <Packed />
            <DayliSels />
            <Vagitabls />

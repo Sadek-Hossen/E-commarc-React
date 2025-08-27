@@ -24,7 +24,7 @@ function Card() {
       {CardInfo.map((item, id) => (
         <div
           key={id}
-          className=" p-4 rounded-lg gap-4 md:flex flex-col "
+          className=" p-4 rounded-lg gap-4 mx-auto md:flex flex-col "
          
         >
           <div className="  p-2 md:p-4 rounded hover:shadow-2xl shadow-2xs transition-all hover:scale-105" >

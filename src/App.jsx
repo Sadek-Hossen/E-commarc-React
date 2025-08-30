@@ -13,9 +13,9 @@ import DayliSels from './Compunents/DayliSels';
 import Vagitabls from './Compunents/Vagitabls'; 
 import StayHome from './Compunents/StayHome';
 import Footer from './Compunents/Footer';
-import Product from './Compunents/Product';
 import BgHome from './Compunents/BgHome'; 
-import About from './Compunents/about';
+import About from './Compunents/About';
+import Product from './Compunents/Product';
 function App() {
  
 
@@ -40,7 +40,7 @@ function App() {
         <Route path='/Shop' element={<Shop />} />
         <Route path='/Blog' element={<Blog />} />
         <Route path='/Contruct' element={<Contruct />} />
-        <Route path='/product' element={<Product />} />
+        <Route path='/product' element={<Product/>} />
         
       </Routes>
       <StayHome />

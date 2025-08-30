@@ -51,7 +51,7 @@ const provideInfo = [
   },
 ];
 
-function about() {
+function About() {
   return (
     <>
       <section className="mb-[50px] grid md:grid-cols-2 gap-3 md:pt-30  mx-auto px-3">
@@ -146,4 +146,4 @@ function about() {
   );
 }
 
-export default about;
+export default About;

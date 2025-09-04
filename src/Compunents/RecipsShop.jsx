@@ -126,12 +126,7 @@ const imgInf =[
     link:'./Blog.jsx'},
     
 ]
-const go = `
-  <p className="bg-gray-700 text-white w-full">
-  
-  Hello all how are you
-   </p>
-`
+
 
 
 function RecipsShop() {

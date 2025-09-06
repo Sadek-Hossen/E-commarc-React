@@ -69,7 +69,7 @@ function Hero() {
 
           </div>
           <input type="text" ref={textref}  className="text-red-600"/>
-          <div className=" w-[40%] mx-auto flex justify-between items-center bg-white rounded-full mb-5  pl-5 pr-0 ">
+          <div className="  mx-auto flex justify-between items-center bg-white rounded-full mb-5  pl-5 pr-0 ">
             <input ref={emailRef} className="border-none outline-none " type="text" placeholder="Enter your email " /> <button onClick={HandleBtn} className="bg-green-400 md:py-4 py-2  rounded-full mr-0 px-5 md:px-10 opacity-100 hover:opacity-80 cursor-pointer transition-all hover:text-gray-600 hover:shadow-blue-900 shadow-xl shadow-fuchsia-800 font-semibold">Subscribe</button>
           </div>
         </div>
